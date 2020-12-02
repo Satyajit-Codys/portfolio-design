@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lan= "en">
+<head>
+    <meta charset="UTF-8">
+    <title> Personal Portfolio Website</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+    
+<body>
+    
+<section class="main">
+    <nav class="navbar">
+        <ul>
+            <li> <a href="#" class="home active">Home</a></li>
+            <li> <a href="#" class="aboutme">About Me</a></li>
+            <li> <a href="#" class="mywork">My Work</a></li>
+            <li> <a href="#" class="contactme">Contact Me</a></li>
+        </ul>
+    </nav>
+    
+<!-- Home Section-->
+    <div class="home-section hide">
+        <div class="home-section-text">
+            <h1>I am Satyajit Debnath</h1>
+            <h4>Computer Science Student, Developer, Blogger</h4>
+        </div>
+    </div>
+    
+<!--    About Me Section-->
+    <div class="aboutme-section hide">
+        <div class="aboutme-section-text">
+            <p> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p> 
+            <p> If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+        </div>
+    </div>
+    
+    
+<!--    My Work Section-->
+    <div class="mywork-section hide">
+        <div class="mywork-section-text">
+            <a href="https://github.com/Satyajit-Codys/WordCloud"> 
+                <img src="images/project1.png" alt="">
+                <h3> WordCloud Project</h3>
+            </a>
+             <a href="https://github.com/Satyajit-Codys/Journal"> 
+                <img src="images/project2.jpg" alt="">
+                 <h3> Console Journal</h3>
+            </a>
+             <a href="#"> 
+                <img src="images/project3.png" alt="">
+                 <h3> Steganography</h3>
+            </a>
+             
+        </div>
+    </div>
+<!--    Contact Me Section-->
+    <div class="contactme-section hide">
+        <div class="contactme-section-text">
+            <address>
+                Bargachi, Moyail, <br>
+                Purba Barddhaman <br>
+                WB 713513<br><br>
+            </address>
+            <p> Any query to email: <a href="mailto:satyajitdebnath87gmail.com">satyajitdebnath87@gmail.com</a></p>
+            <p> Coffe With me call me: <a href="tel:+917047290028">+91 7047290028</a></p>
+        </div>
+    </div>
+    
+</section>
+    
+<script src="js/jquery-2.1.3.min.js"></script>
+<script>
+    //code here
+    $(document).ready(function(){
+        
+        $(".navbar ul li a").click(function(){
+            $(".navbar ul li a").removeClass("active");
+            $(this).addClass("active");
+        })
+        $(".home").click(function(){
+            $(".hide").fadeOut();
+            $(".home-section").fadeIn();
+        });
+        $(".aboutme").click(function(){
+            $(".hide").fadeOut();
+            $(".aboutme-section").fadeIn();
+        });
+        $(".mywork").click(function(){
+            $(".hide").fadeOut();
+            $(".mywork-section").fadeIn();
+        });
+        $(".contactme").click(function(){
+            $(".hide").fadeOut();
+            $(".contactme-section").fadeIn();
+        });
+    });
+    
+</script>
+</body>
+</html>

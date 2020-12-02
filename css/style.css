@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /*fonts can be changed*/
+    font-family: Oswald, sans-serif;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+.main {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+}
+
+.navbar {
+    position: fixed;
+    top: 30%;
+    left: 0;
+    z-index: 99;
+}
+
+.navbar ul li {
+    width: 270px;
+}
+
+.navbar ul li a {
+    color: #333;
+    background-color: #fff;
+    width: 95%;
+    height: 75px;
+    display: inline-block;
+    text-decoration: none;
+    line-height: 75px;
+    text-align: right;
+    margin-bottom: 10px;
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-right: 70px;
+    border-radius: 0 50px 50px 0;
+    transition: all ease 0.3s;
+}
+
+.navbar ul li:nth-child(1) a {
+    width: 70%;
+}
+
+.navbar ul li:nth-child(3) a {
+    width: 80%;
+}
+
+.navbar ul li a:hover {
+    background-color: #000;
+    color: #fff;
+    width: 100%
+}
+.navbar ul li a.active{
+    background-color: #000;
+    color: #fff;
+    width: 100%
+}
+
+/*Home Section*/
+.home-section {
+    background: url(../images/home-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    
+}
+
+.home-section-text {
+    float: right;
+    width: 70%;
+    margin-top: 25%;
+    padding: 0 50px;
+    color: #fff;
+}
+
+.home-section h1 {
+    font-size: 88px;
+    text-transform: uppercase;
+}
+
+.home-section h4 {
+    font-size: 38px;
+    font-weight: 400;
+}
+
+.aboutme-section {
+    background: url(../images/aboutme-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    display: none;
+}
+
+.aboutme-section-text {
+    float: right;
+    width: 70%;
+    margin-top: 10%;
+    padding: 0 50px;
+    color: #fff;
+}
+
+.aboutme-section-text p {
+    font-size: 18px;
+    padding: 0 100px;
+    margin-bottom: 15px;
+}
+
+/*My work section*/
+.mywork-section {
+    background: url(../images/mywork-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    display: none;
+}
+
+.mywork-section-text {
+    float: right;
+    width: 70%;
+    margin-top: 10%;
+    padding: 0 50px;
+    color: #fff;
+}
+
+.mywork-section-text a img {
+    width: 100%;
+}
+
+.mywork-section-text a {
+    display: inline-block;
+    width: 30%;
+    margin: 0 15px 25px 0;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+}
+
+/*Contatc Me Section*/
+.contactme-section {
+    background: url(../images/contactme-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    display: none;
+}
+
+.contactme-section-text {
+    float: right;
+    width: 70%;
+    margin-top: 10%;
+    padding: 50px 150px;
+    color: #fff;
+}
+
+.contactme-section-text address {
+    font-size: 22px;
+}
+
+.contactme-section-text a {
+    color: #fff;
+}
